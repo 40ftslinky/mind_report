@@ -10,11 +10,11 @@
 .markers {
     position:fixed;
     top:50vh;
-    right: 5vw;
+    right: 0;
     z-index:888888;
-    width: 5vw;
+    width: 110px;
     height: auto;
-/*    background-color: red;*/
+    background-color: rgba(0,0,0,0.3);
     transform: translateY(-50%)
 }
 
@@ -43,6 +43,6 @@ li.mark a  {
 
 .mark .active{
     color: rgba(255,255,255,0.6);
-    font-size: 96px;
-    margin-right: 2rem;
+    font-size: 50px;
+/*    margin-right: 2rem;*/
 }
