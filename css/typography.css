@@ -3,6 +3,11 @@
   @import url("https://use.typekit.net/uag3sjd.css");
   @import "../font/hevetica-bold.css";
 
+:root {
+      --primary-heading:700 16px helvetica-bold, sans-serif;
+      --primary-body:400 16px corporate-s, sans-serif;
+}
+
 /*Corporate S Pro Regular*/
 ._primary-body {
     font-family: corporate-s,sans-serif;
@@ -57,4 +62,37 @@ p {
     line-height: 34px;
     color: white;
     
+}
+
+
+/* --------------------------------------- */
+/* responsive */
+/* --------------------------------------- */
+
+* {
+  /* Typography */
+  --body-font:var(--primary-body);
+  --header-font:var(--primary-heading);
+
+  /* Calculation */
+  --responsive: calc((var(--min-font) * 1rem) + (var(--max-font) - var(--min-font)) * ((100vw - 420px) / (1400 - 420)));
+  /* Ranges from 421px to 1399px */
+}
+
+
+h1, .h1 {
+  /* Set max and min font sizes */
+  --max-font: 5.5;
+  --min-font: 4;
+  font: var(--header-font);
+  font-size: var(--responsive);
+  line-height: 1.1;
+}
+
+h2, .h2 {
+    --max-font: 4.5;
+  --min-font: 3;
+  font: var(--header-font);
+  font-size: var(--responsive);
+  line-height: 1.1;
 }

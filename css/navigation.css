@@ -35,12 +35,12 @@ body.scroll {
 
 .burger {
   display: inline-block;
-  position:relative;
+  position:absolute;
   float:left;
 /*  top:25px;*/
 /*  right:1rem;*/
-  top:0;
-left:95vw;
+  top:15px;
+    left:95vw;
   z-index:2;
   border: 0;
   background: none;
@@ -160,7 +160,7 @@ left:95vw;
     padding: 5px 20px;
 }
 
-.navigation ul li a i {color:white;}
+.navigation ul li a i:before {color:white;}
 
 .navigation ul li a:hover {
   /* text-decoration: underline; */
