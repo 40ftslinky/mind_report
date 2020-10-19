@@ -1,0 +1,89 @@
+/*_structure.css*/
+
+header {
+    width:100vw;
+    height: 90px;
+    background-color: rgba(255,255,255,0.2);
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999999;
+    padding: 1rem 0;
+}
+
+
+section {
+    width:100vw;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    display: block;
+/*
+    position: absolute;
+    top:0;
+    left: 0;
+*/
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#_sect_01 {
+    background-color: var(--primary-lime);
+    background-image: url("../img/hero1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#_sect_02 {
+    background: var(--primary-blue);
+    background-image: url("../img/hero2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#_sect_03 {
+    background: var(--light_grey);
+}
+section {
+    
+}
+section ._wrapper {
+    height: 100vh;
+    margin: 0 5rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+._chunk {
+    display: block;
+    margin-left: 40%;
+    width: 35vw;
+    height: 35vw;
+}
+._text_wrapper {
+        padding: 5rem 2.5rem 2.5rem 5rem ;
+}
+#_sect_01 ._chunk {
+/*    background-color: var(--primary-blue-85);*/
+    background-color:rgba(0,174,239,0.85);
+}
+#_sect_02 ._chunk {
+    background: url("../img/BLUE.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+.page.down {
+  -webkit-transform: translate(0, 100%);
+  transform:translate(0, 100%);
+}
+
+.page.up {-webkit-transform: translate(0, -85%);
+  transform: translate(0, -85%);}
+
+.page.transition {
+  -webkit-transition-duration: .5s;
+  transition-duration: .5s;
+}
+
+

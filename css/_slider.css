@@ -1,0 +1,48 @@
+/* _slider.css */
+
+:root {
+    --speed: 666ms;
+    --ease: cubic-bezier(0.666, 0.000, 0.333, 1.000);
+}
+
+
+
+.markers {
+    position:fixed;
+    top:50vh;
+    right: 5vw;
+    z-index:888888;
+    width: 5vw;
+    height: auto;
+/*    background-color: red;*/
+    transform: translateY(-50%)
+}
+
+.markers ul, .markers_ul {
+/*    background-color: aqua;*/
+}
+
+li.mark{
+    position: relative;
+    height: 100%;
+    list-style: none;
+    margin-left: -1rem;
+}
+
+li.mark a  {  
+    text-align: center;
+    color: rgba(255,255,255,0.3);
+    font-family: helvetica-bold,sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 26px;
+    text-decoration: none;
+    transform: translate3d(0,0,0);
+    transition: all var(--speed) var(--ease);
+}
+
+.mark .active{
+    color: rgba(255,255,255,0.6);
+    font-size: 96px;
+    margin-right: 2rem;
+}
