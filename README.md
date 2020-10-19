@@ -2,3 +2,7 @@
 Mind Australia Online Annual Report
 
 [Annual Report](https://40ftslinky.github.io/mind_report/)
+
+---
+permalink: /index.html
+---
