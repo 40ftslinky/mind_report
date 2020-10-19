@@ -31,47 +31,139 @@ section {
 #_sect_01 {
     background-color: var(--primary-lime);
     background-image: url("../img/hero1.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
 }
 #_sect_02 {
     background: var(--primary-blue);
     background-image: url("../img/hero2.jpg");
+
+}
+#_sect_03 {
+    background: var(--secondary-rubine);
+    background-image: url("../img/hero3.jpg");
+
+}
+
+#_sect_04 {
+    background-color: var(--dark-green);
+    background-image: url("../img/hero4.jpg");
+  
+}
+section[id~="#_sect"] {
     background-size: cover;
     background-repeat: no-repeat;
 }
-#_sect_03 {
-    background: var(--light_grey);
-}
-section {
-    
-}
+
+/* ---------------------------- */
+
 section ._wrapper {
     height: 100vh;
-    margin: 0 5rem;
+    width: 100%;
+    margin: 0 ;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
+
 ._chunk {
     display: block;
     margin-left: 40%;
+/*    margin-right: 10%;*/
     width: 35vw;
-    height: 35vw;
+    float: left:
+/*    height: 35vw;*/
 }
+.I{}
+
 ._text_wrapper {
-        padding: 5rem 2.5rem 2.5rem 5rem ;
+/*        padding: 5rem 2.5rem 2.5rem 5rem ;*/
+        padding: 5vw ;
 }
+
+.img_credit {
+    padding:1rem;
+/*    float: right;*/
+    margin-top: 1rem;
+    width: calc(100% - 2rem)
+}
+.img_credit p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
+}
+
+/* ---------------------------- */
+
 #_sect_01 ._chunk {
-/*    background-color: var(--primary-blue-85);*/
-    background-color:rgba(0,174,239,0.85);
+    width:35vw;
 }
+#_sect_01 ._chunk_bg {
+    background-color: var(--primary-blue-85);
+}
+
+
+/* ---------------------------- */
+
 #_sect_02 ._chunk {
+    width:35vw;
+}
+#_sect_02 ._chunk_bg {
     background: url("../img/BLUE.png");
     background-size: 100% 100%;
     background-repeat: no-repeat;
+    height: 30vw;
 }
+
+
+/* ---------------------------- */
+
+#_sect_03 ._chunk {
+    margin-left: 20%;
+    width: 50vw;
+}
+#_sect_03 ._chunk_bg {
+    background-color:var(--secondary-rubine-85);
+}
+#_sect_03 ._chunk_bg div::after {
+    width: 100%;
+    clear: both
+}
+#_sect_03 ._chunk_bg div.two_col {
+    column-count: 2;
+    column-gap: 2rem;
+}
+#_sect_03 ._chunk h2 { }
+#_sect_03 ._chunk_bg p {
+    font-size: 22px;
+    line-height: 32px;
+    margin-top: 0;
+
+}
+
+/* ---------------------------- */
+
+#_sect_04 ._chunk {
+    width:35vw;
+}
+#_sect_04 ._chunk_bg {
+    background: url("../img/LIME.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+/*    height: 30vw;*/
+}
+
+#_sect_04 ._chunk_bg h2,
+#_sect_04 ._chunk_bg p {
+    color: var(--dark_grey);
+}
+
+/* ---------------------------- */
+
+
+/* ---------------------------- */
+
 
 .page.down {
   -webkit-transform: translate(0, 100%);

@@ -10,6 +10,7 @@
 
 
 
+
 :root {
     
     /*  */
@@ -31,4 +32,8 @@
     --screen-lg-width:75rem; /* 1200px */
     --screen-xl-width:100rem; /* 1600px */
     
+}
+
+body {
+    overflow: hidden;
 }
