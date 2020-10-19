@@ -1,7 +1,7 @@
 /* typography.css */
 
   @import url("https://use.typekit.net/uag3sjd.css");
-  @import "../font/_hevetica-bold.css";
+  @import "../font/hevetica-bold.css";
 
 /*Corporate S Pro Regular*/
 ._primary-body {
