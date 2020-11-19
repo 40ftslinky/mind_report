@@ -13,13 +13,22 @@ nav {
 }
 
 body.noscroll {
+/*
   overflow: hidden;
   position: fixed;
+*/
 }
 
 body.scroll {
+/*
   overflow: auto;
   position:relative;
+*/
+}
+
+.logo_wrapped {
+    position: fixed;
+    z-index: 99;
 }
 
 .logo {

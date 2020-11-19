@@ -12,43 +12,90 @@ header {
     padding: 1rem 0;
 }
 
-
 section {
     width:100vw;
     height: 100vh;
     padding: 0;
     margin: 0;
     display: block;
-/*
-    position: absolute;
-    top:0;
-    left: 0;
-*/
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 #_sect_01 {
-    background-color: var(--primary-lime);
     background-image: url("../img/hero1.jpg");
 }
 #_sect_02 {
-    background: var(--primary-blue);
     background-image: url("../img/hero2.jpg");
 
 }
 #_sect_03 {
-    background: var(--secondary-rubine);
     background-image: url("../img/hero3.jpg");
-
+/*    background-color: var(--secondary-rubine);*/
 }
 
 #_sect_04 {
-    background-color: var(--dark-green);
     background-image: url("../img/hero4.jpg");
   
 }
-section[id~="_sect_"], #_sect_01, #_sect_02, #_sect_03, #_sect_04  {
+#_sect_05 {
+    background-image: url("../img/hero5.jpg");
+  
+}
+#_sect_06 {
+    background-image: url("../img/hero6.jpg");
+  
+}
+#_sect_07 {
+    background-image: url("../img/hero7.jpg");
+  
+}
+#_sect_08 {
+    background-image: url("../img/hero8.jpg");
+  
+}
+#_sect_09 {
+    background-image: url("../img/hero9.jpg");
+  
+}
+#_sect_10 {
+    background-image: url("../img/hero10.jpg");
+  
+}
+#_sect_11 {
+    background-image: url("../img/hero11.jpg");
+  
+}
+#_sect_12 {
+    background-image: url("../img/hero12.jpg");
+  
+}
+#_sect_13 {
+/*    background-image: url("../img/hero13.jpg");*/
+    background-color:var(--secondary-lavender);
+  
+}
+#_sect_14 {
+    background-image: url("../img/hero14.jpg");
+  
+}
+#_sect_15 {
+    background-image: url("../img/hero15.jpg");
+  
+}
+#_sect_16 {
+    background-image: url("../img/hero16.jpg");
+  
+}
+#_sect_17 {
+    background-image: url("../img/hero17.jpg");
+  
+}
+
+
+section[id~=_sect_]
+/*, #_sect_01, #_sect_02, #_sect_03, #_sect_04  */
+{
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -69,14 +116,12 @@ section ._wrapper {
 ._chunk {
     display: block;
     margin-left: 40%;
-/*    margin-right: 10%;*/
     width: 35vw;
     float: left:
-/*    height: 35vw;*/
 }
 
 @media screen and (max-width: 64rem){
-    ._chunk {
+    ._chunk, ._chunk_bg {
         margin-left: 5vw;
         margin-right: 10vw;
         width: 100% !important;
@@ -85,15 +130,22 @@ section ._wrapper {
 
 ._text_wrapper {
 /*        padding: 5rem 2.5rem 2.5rem 5rem ;*/
-        padding: 5vw ;
+        padding: 3.5vw ;
 }
 
 .img_credit {
     padding:1rem;
 /*    float: right;*/
-    margin-top: 1rem;
-    width: calc(100% - 2rem)
+/*    margin-top: 1rem;*/
+/*    margin-top: calc(10vh);*/
+    width: calc(100% - 2rem);
 }
+
+.img_credit_bot {
+    position: absolute;
+    bottom:2rem;
+}
+
 .img_credit p {
     margin: 0;
     font-size: 14px;
@@ -107,8 +159,25 @@ section ._wrapper {
     width:35vw;
 }
 #_sect_01 ._chunk_bg {
-    background-color: var(--primary-blue-85);
+    background-color: rgba(255,255,255,0.8);
 }
+
+#_sect_01 img { margin-bottom: 3rem; }
+#_sect_01 ._text_wrapper img { width: 200px; }
+
+#_sect_01 ._chunk h1.title {
+    color: var(--primary-blue);
+    margin-bottom: .25rem;
+}
+#_sect_01 ._chunk h1.subhead {
+    margin-bottom: 1.3rem;
+}
+#_sect_01 ._chunk h2 {
+    color: var(--light_grey);
+    line-height: 1;
+    margin-bottom: 1.0rem;
+}
+
 
 
 /* ---------------------------- */
@@ -120,33 +189,28 @@ section ._wrapper {
     background: url("../img/BLUE.png");
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    minheight: 30vw;
+/*    min-height: 30vw;*/
+}
+#_sect_02 ._chunk h2,
+#_sect_02 ._chunk_bg p {
+    color: white;
 }
 
 
 /* ---------------------------- */
 
 #_sect_03 ._chunk {
-    margin-left: 20%;
-    width: 50vw;
+    width:35vw;
 }
 #_sect_03 ._chunk_bg {
-    background-color:var(--secondary-rubine-85);
+    background: url("../img/WHITE.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+/*    min-height: 30vw;*/
 }
-#_sect_03 ._chunk_bg div::after {
-    width: 100%;
-    clear: both
-}
-#_sect_03 ._chunk_bg div.two_col {
-    column-count: 2;
-    column-gap: 2rem;
-}
-#_sect_03 ._chunk h2 { }
+#_sect_03 ._chunk h2,
 #_sect_03 ._chunk_bg p {
-    font-size: 22px;
-    line-height: 32px;
-    margin-top: 0;
-
+/*    color: white;*/
 }
 
 /* ---------------------------- */
@@ -168,7 +232,262 @@ section ._wrapper {
 
 /* ---------------------------- */
 
+#_sect_06 ._chunk {
+    width:35vw;
+}
+#_sect_06 ._chunk_bg {
+    background: url("../img/BLUE.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+/*    min-height: 30vw;*/
+}
+#_sect_06 ._chunk h2,
+#_sect_06 ._chunk_bg p {
+    color: white;
+}
 
+/* ---------------------------- */
+
+#_sect_13 ._chunk {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 1200px;
+/*    margin-top: 5vw;*/
+    align-content: center;
+}
+
+#_sect_13 ._chunk_bg:first-of-type {
+    margin-left: 0;
+    width: 50%;
+    height: 100%;
+    object-fit: contain;
+    float: left;
+    background-color: transparent;
+}
+
+#_sect_13 ._chunk_bg img {
+    width: calc(100% - 4rem);
+    padding: 2rem;
+}
+
+#_sect_13 ._chunk_bg:nth-of-type(2) {
+    margin-left: 2.5vw;
+    width: 45%;
+    float: left
+}
+#_sect_13 ._chunk_bg {
+}
+#_sect_13 ._chunk_bg div::after {
+    width: 100%;
+    clear: both;
+    margin: 0;
+}
+.two_col {
+    column-count: 2;
+    column-gap: 2rem;
+}
+#_sect_13 ._chunk h2 { }
+#_sect_13 ._chunk_bg p {
+    font-size: 22px;
+    line-height: 32px;
+    margin: 0;
+}
+#_sect_13 ._chunk h2,
+#_sect_13 ._chunk_bg p {
+/*    color: white;*/
+}
+
+#_sect_13 .img_credit {
+    max-width: 100%;
+    float: left
+}
+
+/* ---------------------------- */
+
+
+#_sect_14 ._chunk {
+    width:35vw;
+}
+#_sect_14 ._chunk_bg {
+    background: url("../img/WHITE.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+/*    min-height: 30vw;*/
+}
+#_sect_14 ._chunk h2,
+#_sect_14 ._chunk_bg p {
+/*    color: white;*/
+}
+
+.bg-video-wrapper {
+    height: 100%;
+    width: 100%;
+    background: url(../img/hero14.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+.bg-video-wrapper {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%; 
+  overflow: hidden;
+}
+
+.bg-video-wrapper video {
+  /* Make video to at least 100% wide and tall */
+  min-width: 100%; 
+  min-height: 100%; 
+  
+  /* Setting width & height to auto prevents the browser from stretching or squishing the video */
+  width: auto;
+  height: auto;  
+  
+  /* Center the video */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+ 
+.overlay {
+  background: rgba(0,0,0,0.5);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 95%;
+  max-width: 45em;
+  margin: auto auto 1em;
+  box-sizing: border-box;
+  padding: 2em;
+  line-height: 1.5;
+  text-align: center;
+}
+
+
+/* ---------------------------- */
+
+
+/* ---------------------------- */
+
+
+#_sect_15 ._chunk {
+    width:50vw;
+}
+
+#_sect_15 ._chunk {
+    margin-left: 30%;
+}
+
+#_sect_15 ._text_wrapper {
+    margin: 3rem 1.5rem
+}
+
+#_sect_15 ._2col { 
+    column-count: 2;
+    column-gap: 2rem;
+}
+
+#_sect_15 ._chunk h2,
+#_sect_15 ._chunk_bg p {
+/*    color: white;*/
+}
+
+#_sect_15 ._chunk h2 {
+    font-size: 2.25rem;
+}
+
+#_sect_15 ._chunk_bg p {
+    font-size: 1.125rem;
+    line-height: 1.375;
+    margin-top: 0;
+}
+
+
+/* ---------------------------- */
+
+
+#_sect_16 ._chunk {
+    width:35vw;
+}
+
+#_sect_16 ._chunk_bg {
+    background: url("../img/WHITE.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+/*    min-height: 30vw;*/
+}
+
+#_sect_16 ._text_wrapper {
+    margin: 3rem 1.5rem
+}
+
+#_sect_16 ._chunk h2,
+#_sect_16 ._chunk_bg p {
+/*    color: white;*/
+}
+
+#_sect_16 ._chunk h2 { 
+    margin-bottom: 1.5rem;
+}
+
+
+#_sect_16 ._chunk_bg p {
+    font-size: 1.3rem;
+    line-height: 1.4;
+    margin-top: 0;
+}
+
+
+/* ---------------------------- */
+
+
+#_sect_17 ._chunk {
+    width:35vw;
+    margin: auto
+}
+
+#_sect_17 ._chunk_bg {
+    background: url("../img/WHITE.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+/*    min-height: 30vw;*/
+}
+
+#_sect_17 ._text_wrapper { 
+    text-align: center
+}
+#_sect_17 ._text_wrapper img { 
+    width: 400px;
+    margin: 2rem 0;
+}
+
+
+/* ---------------------------- */
+/* ---------------------------- */
+/* ---------------------------- */
+
+
+section ._chunk {
+    width:35vw;
+}
+section ._chunk_bg {
+    background-color: rgba(255,255,255,0.9);
+}
+section ._chunk_bg h2 {
+    color: var(--primary-blue);
+}
+section ._chunk_bg p {
+    color: var(--dark_grey);
+}
+
+
+
+/* ---------------------------- */
 /* ---------------------------- */
 
 

@@ -1,10 +1,11 @@
 /* typography.css */
 
   @import url("https://use.typekit.net/uag3sjd.css");
-  @import "../font/hevetica-bold.css";
+  @import "../font/hevetica.css";
 
 :root {
       --primary-heading:700 16px helvetica-bold, sans-serif;
+      --primary-regular:400 16px helvetica-regular, sans-serif;
       --primary-body:400 16px corporate-s, sans-serif;
 }
 
@@ -42,15 +43,29 @@ h1, h2 {
     color: white;
 }
 
+h1.title {
+    margin-bottom: 1rem;
+}
+h1.subhead {
+    font-family: helvetica-regular,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--primary-blue);
+}
+
+#_sect_01 ._chunk h2 {
+    color: var(--light_grey);
+}
+
 h1 {
-    font-size: 70px;
-    line-height: 66px;
+    font-size: 52px;
+    line-height: 48px;
     margin-top: 0;
 }
 
 h2 {
-    font-size: 50px;
-    line-height: 55px;
+    font-size: 32px;
+    line-height: 40px;
     margin-top: 0;
 }
 

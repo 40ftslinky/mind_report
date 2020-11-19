@@ -27,8 +27,10 @@
 
   <meta name="theme-color" content="#fafafa">
     
-      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<!--      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />-->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
+   
     
 </head>
 
@@ -135,78 +137,68 @@
     
     <div class="markers">
         <ul class="markers_ul">
-            <li class="mark">
-                <a class="sect_link" href="#_sect_01">01</a>
-            </li>
+            <li class="mark"><a class="link up-btn" href="#">prev</a></li>
             
-            <li class="mark">
-                <a class="sect_link" href="#_sect_02">02</a>
-            </li>
-                
-            <li class="mark">                
-                <a class="sect_link" href="#_sect_03">03</a>
-            </li>
-            <li class="mark">                
-                <a class="sect_link" href="#_sect_04">04</a>
-            </li>
-                
+            <li class="mark"><a class="link down-btn" href="#">next</a></li>
+            <li class="mark count">01</li>
+              
         </ul>    
     </div>
     
-    <section id="_sect_01" class="page-section">
+    <section id="_sect_01" class="page-section" data-slide="1">
         <div class="_wrapper">
             <div class="_chunk" data-aos="fade" data-aos-delay="300" >
                 <div class="_chunk_bg">
+                    <!-- add span for accessablilty fallback -->
+                    <span role="img" aria-label="Mind Australia clients and staff enjoying Recovery Retreat, Queensland"> </span>
                     <div class="_text_wrapper">
-                        <h1 data-aos="fade" data-aos-delay="600">Mind Australia 2019-2020:</h1>
+                        <img src="img/mind_logo_rgb.svg" alt="Mind Australia logo - Mind: Help, hope and purpose"/>
+                        <h1 class="title" data-aos="fade" data-aos-delay="600">Mind Australia</h1>
+                        <h1 class="subhead" data-aos="fade" data-aos-delay="600">2019-2020:</h1>
                         <h2 data-aos="fade-up" data-aos-delay="800">Safety, support, connection</h2>
                     </div>
                 </div>
-                <div class="img_credit lime-trans_bg" data-aos="fade" data-aos-delay="950">
+                <div class="img_credit" data-aos="fade" data-aos-delay="950">
                     <p>Recovery Retreat, Queensland</p>
                 </div>  
             </div>     
         </div>
     </section>
     
-    <section id="_sect_02" class="page-section" >
+    <section id="_sect_02" class="page-section" data-slide="2">
         <div class="_wrapper">
-            <div class="_chunk" data-aos="fade" data-aos-delay="300" >
-                <div class="_chunk_bg">
+            <div class="_chunk"  >
+                <div class="_chunk_bg" data-aos="zoom-in" data-aos-delay="300">
                     <div class="_text_wrapper">
-                        <h2 data-aos="fade" data-aos-delay="600">In 2019-2020</h2>
+                        <h2 data-aos="fade-up" data-aos-delay="600">Introduction</h2>
                         <p data-aos="fade-up" data-aos-delay="800">In 2019-2020 we used our experience, resources and adaptability to support our clients through this extraordinary year.</p>
                     </div>
                 </div>
-                <div class="img_credit blue-trans_bg" data-aos="fade" data-aos-delay="950">
+                <div class="img_credit" data-aos="fade" data-aos-delay="950">
                     <p>Dandenong youth residential service at the Outdoor Experience, Kew</p>
                 </div> 
             </div>
         </div>
     </section>
     
-    <section id="_sect_03" class="page-section" >
+    <section id="_sect_03" class="page-section" data-slide="3">
         <div class="_wrapper">
             <div class="_chunk" data-aos="fade" data-aos-delay="300" >
                 <div class="_chunk_bg">
                     <div class="_text_wrapper">
-                        <div>
-                            <h2 data-aos="fade" data-aos-delay="600">COVID-19</h2>
-                        </div>
-                        <div class="two_col">
-                            <p data-aos="fade-up" data-aos-delay="800">We celebrate the commitment, resilience and adaptability of our staff who supported clients through every change and challenge the pandemic brought their way. </p>
-                            <p data-aos="fade-up" data-aos-delay="900">We especially thank our Victorian residential frontline staff who have kept clients safe and supported throughout lockdown.</p>
-                        </div>
-                    </div>
+                        <h2 data-aos="fade" data-aos-delay="600">COVID-19</h2>
+                        <p data-aos="fade-up" data-aos-delay="800">We celebrate the commitment, resilience and adaptability of our staff who supported clients through every change and challenge the pandemic brought their way. </p>
+                        <p data-aos="fade-up" data-aos-delay="900">We especially thank our Victorian residential frontline staff who have kept clients safe and supported throughout lockdown.</p>
+                    </div>                
                 </div>
-                <div class="img_credit rubine-trans_bg" data-aos="fade" data-aos-delay="950">
+                <div class="img_credit " data-aos="fade" data-aos-delay="950">
                     <p>Chiron Supported Independent Living residence, Melbourne</p>
                 </div>
             </div>
         </div>
     </section>
     
-    <section id="_sect_04" class="page-section" >
+    <section id="_sect_04" class="page-section" data-slide="4">
         <div class="_wrapper">
             <div class="_chunk" data-aos="fade" data-aos-delay="300" >
                 <div class="_chunk_bg">
@@ -215,12 +207,288 @@
                         <p data-aos="fade-up" data-aos-delay="800">The popularity of telehealth groups was a surprise result of the COVID restrictions on in-person support. From online Mind Recovery College classes in Mackay to online video game groups in Melbourne, staff and clients found ways to stay connected and maintain support.</p>
                     </div>
                 </div>
-                <div class="img_credit dgreen-trans_bg" data-aos="fade" data-aos-delay="950">
+                <div class="img_credit" data-aos="fade" data-aos-delay="950">
                     <p>Mind centre Williamstown’s video game group in action</p>
                 </div> 
             </div>
         </div>
     </section>
+    
+    <section id="_sect_05" class="page-section" data-slide="5">
+        <div class="_wrapper">
+            <div class="_chunk" data-aos="fade" data-aos-delay="300" >
+                <div class="_chunk_bg">
+                    <div class="_text_wrapper">
+                        <h2 data-aos="fade" data-aos-delay="600">Bushfires</h2>
+                        <p data-aos="fade-up" data-aos-delay="800"> 
+During the unprecedented bushfires in the Eastern states of Australia, our dedicated support staff ensured every Mind client in affected areas was accounted for, safe, and knew that we were there for them.</p>
+                    </div>
+                </div>
+<!--
+                <div class="img_credit" data-aos="fade" data-aos-delay="950">
+                    <p> Vestibulum dictum nulla quis facilisis consequat.</p>
+                </div> 
+-->
+            </div>
+        </div>
+    </section>
+    
+    <section id="_sect_06" class="page-section" data-slide="6">
+        <div class="_wrapper">
+            <div class="_chunk" data-aos="fade" data-aos-delay="300" >
+                <div class="_chunk_bg">
+                    <div class="_text_wrapper">
+                        <h2 data-aos="fade" data-aos-delay="600">Our reach</h2>
+                        <p data-aos="fade-up" data-aos-delay="800">We provided:</p>
+                        <div class="counter">
+                            <h3>254,183</h3>
+                            <p>hours of support</p>
+                        </div>
+                        <p data-aos="fade-up" data-aos-delay="800">for:</p>
+                        <div class="counter">
+                            <h3>11,480</h3>
+                            <p>customers</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="img_credit" data-aos="fade" data-aos-delay="950">
+                    <p> Mind centre, Mackay</p>
+                </div> 
+            </div>
+        </div>
+    </section>
+    
+    <section id="_sect_07" class="page-section" data-slide="7">
+        <div class="_wrapper">
+            <div class="_chunk" data-aos="fade" data-aos-delay="300" >
+                <div class="_chunk_bg">
+                    <div class="_text_wrapper">
+                        <h2 data-aos="fade" data-aos-delay="600">Support</h2>
+                        <h3 data-aos="fade" data-aos-delay="800">Supporting clients changing needs on their recovery journey</h3>
+<p data-aos="fade-up" data-aos-delay="900">Mind provides</p>
+                        <ul>
+                            <li>Residential recovery care</li>
+                            <li>Community recovery care</li>
+                            <li>Supported independent living</li>
+                            <li>Supported accommodation</li>
+                            <li>Support coordination</li>                    
+                        </ul>
+                    </div>
+                </div>
+                <div class="img_credit" data-aos="fade" data-aos-delay="950">
+                    <p> Recovery retreat, Queenscliff</p>
+                </div> 
+            </div>
+        </div>
+    </section>
+    
+    <section id="_sect_08" class="page-section" data-slide="8">
+        <div class="_wrapper">
+            <div class="_chunk" data-aos="fade" data-aos-delay="300" >
+                <div class="_chunk_bg">
+                    <div class="_text_wrapper">
+                        <p data-aos="fade-up" data-aos-delay="800">Mind also provides</p>
+                        <ul>
+                            <li>Family and carer services</li>
+                            <li>In home and community support</li>
+                            <li>Group recreation and leisure</li>
+                            <li>Specialised assistance and support</li>
+                            <li>Peer supported learning</li>
+                            <li>Psychological therapies</li>
+                            <li>Early intervention and community development programs</li>
+                        </ul>
+                    </div>
+                </div> 
+                <div class="img_credit" data-aos="fade" data-aos-delay="950">
+                    <p> Recovery retreat, Queenscliff</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="_sect_09" class="page-section" data-slide="9">
+        <div class="_wrapper">
+            <div class="_chunk" data-aos="fade" data-aos-delay="300" >
+                <div class="_chunk_bg">
+                    <div class="_text_wrapper">
+                        <h2 data-aos="fade" data-aos-delay="600">New services in Queensland</h2>
+                        <p data-aos="fade-up" data-aos-delay="800">We are proud to have been entrusted by our partners to deliver a number of new services, some never before provided in Queensland.</p>
+                        <ul>
+                            <li>Individual recovery support, Cairns and Mackay</li>
+                            <li>Group peer recovery support, Cairns and Mackay</li>
+                            <li>Community Care Unit for residential rehabilitation, Cairns and Hinterland</li>
+                            <li>Youth Step Up Step Down residential support services, Metro North and South</li>
+                            <li>Virtual Step Up Step Down support service, Cairns, Gladstone, Bundaberg, Logan, Caboolture</li>
+                            <li>Mind’s complex care support team contracted by several Primary Health Networks</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="img_credit" data-aos="fade" data-aos-delay="950">
+                    <p> Mind client and support worker, Cairns and Hinterland</p>
+                </div> 
+            </div>
+        </div>
+    </section>
+    
+    <section id="_sect_10" class="page-section" data-slide="10">
+        <div class="_wrapper">
+            <div class="_chunk" data-aos="fade" data-aos-delay="300" >
+                <div class="_chunk_bg">
+                    <div class="_text_wrapper">
+                        <h2 data-aos="fade" data-aos-delay="600">Recovery retreats</h2>
+                        <p data-aos="fade-up" data-aos-delay="800">Mind successfully piloted Mind Recovery Retreats in South Australia following their successful launch in Victoria. These 3-4 day retreats for up to 8 people with mental ill-health provide relaxation, recreation, social interaction and new life skills. SA has nine more (COVIDSafe) retreats planned for 2020- 2021. </p>
+                        
+                    </div>
+                </div>
+                <div class="img_credit" data-aos="fade" data-aos-delay="950">
+                    <p> Recovery retreats, Victor Harbour (SA) and Queenscliff (Vic)</p>
+                </div> 
+            </div>
+        </div>
+    </section>
+    
+    <section id="_sect_11" class="page-section" data-slide="11">
+        <div class="_wrapper">
+            <div class="_chunk" data-aos="fade" data-aos-delay="300" >
+                <div class="_chunk_bg">
+                    <div class="_text_wrapper">
+                        <h2 data-aos="fade" data-aos-delay="600">A place to call home</h2>
+                        <p data-aos="fade-up" data-aos-delay="800">Mind subsidiary The Haven Foundation acquired sites to build multi-unit supported independent living residences in areas of high need in metro Melbourne and regional Victoria</p>
+                        <ul>
+                            <li>Laverton</li>
+                            <li>Epping</li>
+                            <li>Pakenham</li>
+                            <li>Mooroopna</li>
+                            <li>Geelong (under construction)</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="img_credit" data-aos="fade" data-aos-delay="950">
+                    <p> The new Haven Frankston</p>
+                </div> 
+            </div>
+        </div>
+    </section>
+    
+    
+    <section id="_sect_12" class="page-section" data-slide="12">
+        <div class="_wrapper">
+            <div class="_chunk" data-aos="fade" data-aos-delay="300" >
+                <div class="_chunk_bg">
+                    <div class="_text_wrapper">
+                        <h2 data-aos="fade" data-aos-delay="600">Measuring client outcomes</h2>
+                        <p data-aos="fade-up" data-aos-delay="800">Mind clients can now track their recovery progress thanks to an app developed by Mind’s Research and Advocacy team and Digital Transformation team. This works by comparing a client’s self-assessment of various mental health and wellbeing indicators at the beginning and end of a support delivery. Mind is also using this data to achieve continual improvement across all its programs and services.</p>
+                    </div>
+                </div>
+                <div class="img_credit" data-aos="fade" data-aos-delay="950">
+                    <p> Resident at Brunswick West Supported Independent Living</p>
+                </div> 
+            </div>
+        </div>
+    </section>
+    
+    <section id="_sect_13" class="page-section" data-slide="13">
+        <div class="_wrapper">
+            <div class="_chunk" data-aos="fade" data-aos-delay="300" >
+                <div class="_chunk_bg">
+                    <div class="_img_wrapper">
+                        <img src="img/p13_infographic.png" alt="-" />
+                    </div>
+                </div>
+                <div class="_chunk_bg">
+                    <div class="_text_wrapper">
+                        <div>
+                            <h2 data-aos="fade" data-aos-delay="600">My Better Life<sup>®</sup> </h2>
+                            <h3 data-aos="fade" data-aos-delay="700">A new tool to help clients set their own recovery goals</h3>
+                        </div>
+                        <div class="">
+                            <p data-aos="fade-up" data-aos-delay="800"><b>My Better Life</b><sup>®</sup> is our conceptual model for assisting clients to identify life areas they wish to improve and to set recovery goals. Launched in the first months of 2020, <b>My Better Life</b><sup>®</sup> gives clients their own plan by which they set their goals. Clients track their achievement of goals and satisfaction with their progress through regular reviews. Insights from the data <b>My Better Life</b><sup>®</sup> plans provide will also support service design in the future</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="img_credit " data-aos="fade" data-aos-delay="950">
+                    <p>Artwork used use on welcome packs</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="_sect_14" class="page-section" data-slide="14">
+        <div class="_wrapper">
+            <div class="bg-video-wrapper" data-aos="flip" data-aos-delay="200">
+                <video autoplay loop="true" poster="img/hero14.jpg" height="100%">
+                    <source src="vid/reconciliation_background_comp.mp4" type="video/mp4">
+                </video>
+            </div>
+<!--            <div class="overlay"></div>-->
+            <div class="_chunk" data-aos="fade" data-aos-delay="300" >
+                <div class="_chunk_bg">
+                    <div class="_text_wrapper">
+                        <h2 data-aos="fade" data-aos-delay="600">Reconciliation at&nbsp;Mind</h2>
+                        <p data-aos="fade-up" data-aos-delay="800">In National Reconciliation Week 2020, over 50 Mind staff from across Australia came together online to hear and discuss the personal stories of an Aboriginal and Torres Strait Islander staff member and three guests. It was an exciting step in building cross-cultural knowledge across Mind.</p>
+                    </div>
+                </div>
+                <div class="img_credit" data-aos="fade" data-aos-delay="950">
+                    <p> Jason Timor, proud Badu Island man. Guest speaker at our first staff Reconciliation forum.</p>
+                </div> 
+            </div>
+        </div>
+    </section>
+    
+    <section id="_sect_15" class="page-section" data-slide="15">
+        <div class="_wrapper">
+            <div class="_chunk" data-aos="fade" data-aos-delay="300" >
+                <div class="_chunk_bg">                
+                    <div class="_text_wrapper">
+                        <h2 data-aos="fade" data-aos-delay="600">Improving mental health and housing outcomes</h2>
+                        <div data-aos="fade-up" data-aos-delay="800" class="_2col">
+                            <p >How can you recover from mental distress when you don’t have somewhere to live that is safe, secure, appropriate and affordable?</p>
+                            
+                            <p >In February 2020, Mind’s Research and Advocacy division released its ‘Trajectories’ research findings, in partnership with the Australian Housing &amp; Urban Research Institute. </p>
+                            
+                            <p >This important research, informed by interviews with over 130 carers and people with lived experience of mental ill-health, provides a body of evidence that unequivocally demonstrates the links between mental ill-health, homelessness and housing insecurity.</p>
+                            
+                            <p >It will underpin future policy development and advocacy to improve housing and mental health systems to enable people to lead meaningful lives.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="img_credit" data-aos="fade" data-aos-delay="950">
+                    <p> Vestibulum dictum nulla quis facilisis consequat.</p>
+                </div> 
+            </div>
+        </div>
+    </section>
+    
+    <section id="_sect_16" class="page-section" data-slide="16">
+        <div class="_wrapper">
+            <div class="_chunk" data-aos="fade" data-aos-delay="300" >
+                <div class="_chunk_bg">
+                    <div class="_text_wrapper">
+                        <h2 data-aos="fade" data-aos-delay="600">Thank you</h2>
+                        <p data-aos="fade-up" data-aos-delay="700">To our clients, their families and carers, our wonderful staff, peers and partners:</p>
+                        <p data-aos="fade-up" data-aos-delay="800">In a year like no other, we thank everyone for working together to get us through this pandemic, to keep us all safe, to support the vulnerable, and give us hope for a happier and 2021.</p>
+                    </div>
+                </div>
+                <div class="img_credit" data-aos="fade" data-aos-delay="950">
+                    <p> Vestibulum dictum nulla quis facilisis consequat.</p>
+                </div> 
+            </div>
+        </div>
+    </section>
+    
+    <section id="_sect_17" class="page-section" data-slide="17">
+        <div class="_wrapper">
+            <div class="_chunk" data-aos="fade" data-aos-delay="300" >
+                <div class="_chunk_bg">
+                    <div class="_text_wrapper">
+                        <img src="img/mind_logo_rgb.svg" alt="Mind Australia logo - Mind: Help, hope and purpose"/>
+                    </div>
+                </div>
+                 
+            </div>
+        </div>
+    </section>
+    
     
   <!-- / end content -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
@@ -229,6 +497,49 @@
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
 <!--  <script src="js/custom.js"></script>-->
+    
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.19/jquery.scrollify.min.js" crossorigin="anonymous"></script>
+    <script>
+        $(function() {
+            
+        var prevIndex = 0;
+            
+          $.scrollify({
+            section : ".page-section",
+            updateHash: false,
+            scrollbars:false,
+            sectionName:false,
+            overflowScroll:false,
+            before: function(nextIndex, elements) {
+//              alert('before event was sent');
+                    if($.scrollify.current().attr('data-slide')=="1")
+              {
+                 $.scrollify.current().addClass('config');
+              }
+            },
+            after: function(index) {
+//              alert('after is triggered here');
+                    if($.scrollify.current().attr('data-slide')!="0")
+              {
+//                 $.scrollify.previous().removeClass('config');
+                 $('section[data-slide="0"]').removeClass('active');
+              }
+            }
+          });
+
+          $(".down-btn").click(function(e) {
+            e.preventDefault();
+
+            $.scrollify.next();
+          });
+          $(".up-btn").click(function(e) {
+            e.preventDefault();
+
+            $.scrollify.previous();
+          });
+        });
+        
+    </script>
 
     
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
@@ -242,35 +553,37 @@
 -->
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
-    AOS.init();
+    AOS.init({
+        easing: 'ease-out-back',
+        duration: 1000
+    });
   </script>
 
     <script>
-  $( document ).ready(function() {
-	$("a").click(function() {
-		event.preventDefault();
-	    
-        var target = $(this).attr("href"); 
-				// perform animated scrolling by getting top-position of target-element and set it as scroll target
-				$('html, body').stop().animate({
-						scrollTop: $(target).offset().top
-				}, 600, function() {
-						location.hash = target; //attach the hash (#jumptarget) to the pageurl
-				});
 
-				return false;
-	}); 
-});
-
-$(window).scroll(function() {
-		var scrollDistance = $(window).scrollTop();
-		$('.page-section').each(function(i) {
-				if ($(this).position().top <= scrollDistance) {
-						$('.mark a.active').removeClass('active');
-						$('.mark a').eq(i).addClass('active');
-				}
-		});
-}).scroll();
+//$( document ).ready(function() {
+        
+//    var i = 0;
+//    $('.down-btn').on('click', function(event) {
+//        event.preventDefault();
+//        i++;
+//        var offset = $(".page-section").eq(i).offset().top;
+//        $('html, body').stop().animate({
+//            scrollTop: offset
+//        }, 400);
+//    });
+//
+//    $('.up-btn').on('click', function(event) {
+//        event.preventDefault();
+//        i--;
+//        var offset = $(".page-section").eq(i).offset().top;
+//        $('html, body').stop().animate({
+//            scrollTop: offset
+//        }, 400);
+//    });
+    
+//});    
+        
 
     </script>
     

@@ -1,0 +1,21 @@
+/* hevetica.css */
+
+
+@font-face {
+    font-family: 'helvetica-bold';
+    src: url('helvetica-bold.woff2') format('woff2'),
+         url('helvetica-bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'helvetica-regular';
+    src: url('helvetica-regular.woff2') format('woff2'),
+         url('helvetica-regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
