@@ -18,6 +18,7 @@
     transform: translateY(-50%)
 }
 
+
 .markers ul, .markers_ul {
 /*    background-color: aqua;*/
 }
@@ -63,4 +64,26 @@ li.mark a:hover  {
 .link.up-btn,
 .link.down-btn {
    
+}
+
+@media screen and (max-width: 64rem){
+    .markers {
+        position:fixed;
+        top: unset;
+        bottom:-50px;
+        left: 0;
+        height: 100px;
+        width: 100%;
+    }
+    .markers ul {
+        text-align: center;
+        margin-left: -40px;
+    }
+    .markers li {
+        display: inline-block;
+        margin-right: 0;
+        margin-left: 0;
+    }
+    .markers li:first-of-type {
+        margin-right: 3rem;
 }

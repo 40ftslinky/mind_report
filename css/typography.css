@@ -59,44 +59,59 @@ h1.subhead {
 
 h1 {
     font-size: 52px;
-    line-height: 48px;
+    line-height: 1.1;
     margin-top: 0;
 }
 
 h2 {
-    font-size: 32px;
-    line-height: 40px;
+    font-size: 50px;
+    line-height: 1.1;
     margin-top: 0;
+}
+
+h2.subtitle {
+    font-size: 36px;
 }
 
 p {
     font-family: corporate-s,sans-serif;
     font-weight: 400;
     font-style: normal;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+p.large {
     font-size: 28px;
-    line-height: 34px;
+}
+
+.img_credit p {
     color: white;
-    
+}
+
+._text_wrapper li {
+    font-family: corporate-s,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+        font-size: 20px;
+    line-height: 1.5;
 }
 
 
 /* --------------------------------------- */
 /* responsive */
 /* --------------------------------------- */
+/*
 
 * {
-  /* Typography */
   --body-font:var(--primary-body);
   --header-font:var(--primary-heading);
 
-  /* Calculation */
   --responsive: calc((var(--min-font) * 1rem) + (var(--max-font) - var(--min-font)) * ((100vw - 420px) / (1400 - 420)));
-  /* Ranges from 421px to 1399px */
 }
 
 
 h1, .h1 {
-  /* Set max and min font sizes */
   --max-font: 5.5;
   --min-font: 4;
   font: var(--header-font);
@@ -104,10 +119,25 @@ h1, .h1 {
   line-height: 1.1;
 }
 
+
+
 h2, .h2 {
     --max-font: 4.5;
-  --min-font: 3;
+  --min-font: 4;
   font: var(--header-font);
   font-size: var(--responsive);
   line-height: 1.1;
+}
+*/
+
+@media screen and (max-width: 64rem){
+    h1{
+        font-size:2.5rem;
+    }
+    h2{
+        font-size:1.8rem;
+    }
+    p{
+        font-size:1.2rem;
+    }
 }

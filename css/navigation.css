@@ -43,23 +43,24 @@ body.scroll {
 /* ********************************************* */
 
 .burger {
-  display: inline-block;
-  position:absolute;
-  float:left;
+    display: inline-block;
+    position:absolute;
+    float:left;
 /*  top:25px;*/
 /*  right:1rem;*/
-  top:15px;
-    left:95vw;
-  z-index:2;
-  border: 0;
-  background: none;
-  outline: 0;
-  padding: 0;
-  cursor: pointer;
-  border-bottom: 4px solid white;
-  width: 28px;
-  transition: border-bottom 1s ease-in-out;
-  -webkit-transition: border-bottom 1s ease-in-out;
+    top:15px;
+/*    left:95vw;*/
+    left:calc(95vw - 28px);
+    z-index:2;
+    border: 0;
+    background: none;
+    outline: 0;
+    padding: 0;
+    cursor: pointer;
+    border-bottom: 4px solid white;
+    width: 28px;
+    transition: border-bottom 1s ease-in-out;
+    -webkit-transition: border-bottom 1s ease-in-out;
 }
 
 .burger::-moz-focus-inner {

@@ -70,3 +70,32 @@ $(document).ready(function($) {
             });
     });
 });
+
+
+
+// MARKER NAV   
+
+//$( document ).ready(function() {
+        
+//    var i = 0;
+//    $('.down-btn').on('click', function(event) {
+//        event.preventDefault();
+//        i++;
+//        var offset = $(".page-section").eq(i).offset().top;
+//        $('html, body').stop().animate({
+//            scrollTop: offset
+//        }, 400);
+//    });
+//
+//    $('.up-btn').on('click', function(event) {
+//        event.preventDefault();
+//        i--;
+//        var offset = $(".page-section").eq(i).offset().top;
+//        $('html, body').stop().animate({
+//            scrollTop: offset
+//        }, 400);
+//    });
+    
+//});    
+        
+

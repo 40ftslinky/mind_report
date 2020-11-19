@@ -155,7 +155,7 @@
                         <img src="img/mind_logo_rgb.svg" alt="Mind Australia logo - Mind: Help, hope and purpose"/>
                         <h1 class="title" data-aos="fade" data-aos-delay="600">Mind Australia</h1>
                         <h1 class="subhead" data-aos="fade" data-aos-delay="600">2019-2020:</h1>
-                        <h2 data-aos="fade-up" data-aos-delay="800">Safety, support, connection</h2>
+                        <h2 class="subtitle" data-aos="fade-up" data-aos-delay="800">Safety, support, connection</h2>
                     </div>
                 </div>
                 <div class="img_credit" data-aos="fade" data-aos-delay="950">
@@ -171,7 +171,7 @@
                 <div class="_chunk_bg" data-aos="zoom-in" data-aos-delay="300">
                     <div class="_text_wrapper">
                         <h2 data-aos="fade-up" data-aos-delay="600">Introduction</h2>
-                        <p data-aos="fade-up" data-aos-delay="800">In 2019-2020 we used our experience, resources and adaptability to support our clients through this extraordinary year.</p>
+                        <p class="large" data-aos="fade-up" data-aos-delay="800">In 2019-2020 we used our experience, resources and adaptability to support our clients through this extraordinary year.</p>
                     </div>
                 </div>
                 <div class="img_credit" data-aos="fade" data-aos-delay="950">
@@ -413,10 +413,10 @@ During the unprecedented bushfires in the Eastern states of Australia, our dedic
         </div>
     </section>
     
-    <section id="_sect_14" class="page-section" data-slide="14">
+    <section id="_sect_14" class="page-section video-sect" data-slide="14">
         <div class="_wrapper">
             <div class="bg-video-wrapper" data-aos="flip" data-aos-delay="200">
-                <video autoplay loop="true" poster="img/hero14.jpg" height="100%">
+                <video id="video"  loop="true" poster="img/hero14.jpg" height="100%">
                     <source src="vid/reconciliation_background_comp.mp4" type="video/mp4">
                 </video>
             </div>
@@ -440,7 +440,7 @@ During the unprecedented bushfires in the Eastern states of Australia, our dedic
             <div class="_chunk" data-aos="fade" data-aos-delay="300" >
                 <div class="_chunk_bg">                
                     <div class="_text_wrapper">
-                        <h2 data-aos="fade" data-aos-delay="600">Improving mental health and housing outcomes</h2>
+                        <h2 data-aos="fade" data-aos-delay="600">Improving mental health and housing outcomes</h2>
                         <div data-aos="fade-up" data-aos-delay="800" class="_2col">
                             <p >How can you recover from mental distress when you don’t have somewhere to live that is safe, secure, appropriate and affordable?</p>
                             
@@ -499,10 +499,16 @@ During the unprecedented bushfires in the Eastern states of Australia, our dedic
 <!--  <script src="js/custom.js"></script>-->
     
      <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollify/1.0.19/jquery.scrollify.min.js" crossorigin="anonymous"></script>
+    
+      <script src="js/scroll_custom.js"></script>
+
+<!--
     <script>
+        
+        
         $(function() {
             
-        var prevIndex = 0;
+        var i = 0;
             
           $.scrollify({
             section : ".page-section",
@@ -512,14 +518,19 @@ During the unprecedented bushfires in the Eastern states of Australia, our dedic
             overflowScroll:false,
             before: function(nextIndex, elements) {
 //              alert('before event was sent');
-                    if($.scrollify.current().attr('data-slide')=="1")
+                if($.scrollify.current().attr('data-slide')=="i")
               {
-                 $.scrollify.current().addClass('config');
+                    $.scrollify.current().addClass('active');
               }
+                if($.scrollify.current().hasClass('video-sect')){
+                    $("#video").get(0).play();
+                } else {
+                    $("#video").get(0).pause();
+                }
             },
             after: function(index) {
 //              alert('after is triggered here');
-                    if($.scrollify.current().attr('data-slide')!="0")
+                if($.scrollify.current().attr('data-slide')!="0")
               {
 //                 $.scrollify.previous().removeClass('config');
                  $('section[data-slide="0"]').removeClass('active');
@@ -527,19 +538,22 @@ During the unprecedented bushfires in the Eastern states of Australia, our dedic
             }
           });
 
-          $(".down-btn").click(function(e) {
-            e.preventDefault();
+          $(".down-btn").click(function(e) { // e = event
+                e.preventDefault();
 
-            $.scrollify.next();
+                $.scrollify.next();
           });
+            
           $(".up-btn").click(function(e) {
-            e.preventDefault();
+                e.preventDefault();
 
-            $.scrollify.previous();
+                $.scrollify.previous();
           });
+            
         });
         
     </script>
+-->
 
     
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
@@ -559,33 +573,6 @@ During the unprecedented bushfires in the Eastern states of Australia, our dedic
     });
   </script>
 
-    <script>
-
-//$( document ).ready(function() {
-        
-//    var i = 0;
-//    $('.down-btn').on('click', function(event) {
-//        event.preventDefault();
-//        i++;
-//        var offset = $(".page-section").eq(i).offset().top;
-//        $('html, body').stop().animate({
-//            scrollTop: offset
-//        }, 400);
-//    });
-//
-//    $('.up-btn').on('click', function(event) {
-//        event.preventDefault();
-//        i--;
-//        var offset = $(".page-section").eq(i).offset().top;
-//        $('html, body').stop().animate({
-//            scrollTop: offset
-//        }, 400);
-//    });
-    
-//});    
-        
-
-    </script>
     
 </body>
 
