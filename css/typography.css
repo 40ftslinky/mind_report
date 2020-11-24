@@ -79,6 +79,10 @@ p {
     font-style: normal;
     font-size: 20px;
     line-height: 1.5;
+    margin-bottom: 0;
+}
+._text_wrapper ul {
+    margin-bottom: 0;
 }
 
 p.large {
