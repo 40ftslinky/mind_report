@@ -132,15 +132,27 @@
                     </ul>
                 </div>
             </nav>
+            <div class="progress-container">
+                <div class="progress-bar" id="myBar"></div>
+            </div>
         </div>
     </header>
     
     <div class="markers">
         <ul class="markers_ul">
-            <li class="mark"><a class="link up-btn" href="#">prev</a></li>
+            <li class="mark">
+                <a id="prev" class="link prev hide" href="#">
+                    <i class="fa fa-chevron-circle-up"></i>
+                </a>
+            </li>
             
-            <li class="mark"><a class="link down-btn" href="#">next</a></li>
-            <li class="mark count">01</li>
+            <li class="mark"><span class="count"></span></li>
+            
+            <li class="mark">
+                <a id="next" class="link next" href="#">
+                    <i class="fa fa-chevron-circle-down"></i>
+                </a>
+            </li>
               
         </ul>    
     </div>
@@ -149,7 +161,9 @@
         <div class="_wrapper">
             <div class="_chunk" data-aos="fade" data-aos-delay="300" >
                 <div class="_chunk_bg">
+                    <!--  //  -->
                     <!-- add span for accessablilty fallback -->
+                    <!--  //  -->
                     <span role="img" aria-label="Mind Australia clients and staff enjoying Recovery Retreat, Queensland"> </span>
                     <div class="_text_wrapper">
                         <img src="img/mind_logo_rgb.svg" alt="Mind Australia logo - Mind: Help, hope and purpose"/>
@@ -265,13 +279,13 @@ During the unprecedented bushfires in the Eastern states of Australia, our dedic
                     <div class="_text_wrapper">
                         <h2 data-aos="fade" data-aos-delay="600">Support</h2>
                         <h3 data-aos="fade" data-aos-delay="800">Supporting clients changing needs on their recovery journey</h3>
-<p data-aos="fade-up" data-aos-delay="900">Mind provides</p>
-                        <ul>
+                        <h4 data-aos="fade-up" data-aos-delay="900">Mind provides</h4>
+                        <ul data-aos="fade-up" data-aos-delay="1000">
                             <li>Residential recovery care</li>
                             <li>Community recovery care</li>
-                            <li>Supported independent living</li>
-                            <li>Supported accommodation</li>
-                            <li>Support coordination</li>                    
+                            <li data-aos="fade-up" data-aos-delay="1100">Supported independent living</li>
+                            <li data-aos="fade-up" data-aos-delay="1200">Supported accommodation</li>
+                            <li data-aos="fade-up" data-aos-delay="1200">Support coordination</li>                    
                         </ul>
                     </div>
                 </div>
@@ -287,15 +301,15 @@ During the unprecedented bushfires in the Eastern states of Australia, our dedic
             <div class="_chunk" data-aos="fade" data-aos-delay="300" >
                 <div class="_chunk_bg">
                     <div class="_text_wrapper">
-                        <p data-aos="fade-up" data-aos-delay="800">Mind also provides</p>
-                        <ul>
-                            <li>Family and carer services</li>
-                            <li>In home and community support</li>
-                            <li>Group recreation and leisure</li>
-                            <li>Specialised assistance and support</li>
-                            <li>Peer supported learning</li>
-                            <li>Psychological therapies</li>
-                            <li>Early intervention and community development programs</li>
+                        <h3 data-aos="fade-up" data-aos-delay="500">Mind also provides</h3>
+                        <ul data-aos="fade-up" data-aos-delay="600">
+                            <li data-aos="fade-up" data-aos-delay="600">Family and carer services</li>
+                            <li data-aos="fade-up" data-aos-delay="600">In home and community support</li>
+                            <li data-aos="fade-up" data-aos-delay="700">Group recreation and leisure</li>
+                            <li data-aos="fade-up" data-aos-delay="80">Specialised assistance and support</li>
+                            <li data-aos="fade-up" data-aos-delay="900">Peer supported learning</li>
+                            <li data-aos="fade-up" data-aos-delay="1000">Psychological therapies</li>
+                            <li data-aos="fade-up" data-aos-delay="1100">Early intervention and community development programs</li>
                         </ul>
                     </div>
                 </div> 
@@ -311,15 +325,15 @@ During the unprecedented bushfires in the Eastern states of Australia, our dedic
             <div class="_chunk" data-aos="fade" data-aos-delay="300" >
                 <div class="_chunk_bg">
                     <div class="_text_wrapper">
-                        <h2 data-aos="fade" data-aos-delay="600">New services in Queensland</h2>
-                        <p data-aos="fade-up" data-aos-delay="800">We are proud to have been entrusted by our partners to deliver a number of new services, some never before provided in Queensland.</p>
+                        <h2 data-aos="fade" data-aos-delay="400">New services in Queensland</h2>
+                        <p data-aos="fade-up" data-aos-delay="600">We are proud to have been entrusted by our partners to deliver a number of new services, some never before provided in Queensland.</p>
                         <ul>
-                            <li>Individual recovery support, Cairns and Mackay</li>
-                            <li>Group peer recovery support, Cairns and Mackay</li>
-                            <li>Community Care Unit for residential rehabilitation, Cairns and Hinterland</li>
-                            <li>Youth Step Up Step Down residential support services, Metro North and South</li>
-                            <li>Virtual Step Up Step Down support service, Cairns, Gladstone, Bundaberg, Logan, Caboolture</li>
-                            <li>Mind’s complex care support team contracted by several Primary Health Networks</li>
+                            <li data-aos="fade-up" data-aos-delay="700"><strong>Individual recovery support</strong>, Cairns and Mackay</li>
+                            <li data-aos="fade-up" data-aos-delay="700"><strong>Group peer recovery support</strong>, Cairns and Mackay</li>
+                            <li data-aos="fade-up" data-aos-delay="800"><strong>Community Care Unit for residential rehabilitation</strong>, Cairns and Hinterland</li>
+                            <li data-aos="fade-up" data-aos-delay="800"><strong>Youth Step Up Step Down residential support services</strong>, Metro North and South</li>
+                            <li data-aos="fade-up" data-aos-delay="900"><strong>Virtual Step Up Step Down support service</strong>, Cairns, Gladstone, Bundaberg, Logan, Caboolture</li>
+                            <li data-aos="fade-up" data-aos-delay="900"><strong>Mind’s complex care support team</strong> contracted by several Primary Health Networks</li>
                         </ul>
                     </div>
                 </div>
@@ -352,14 +366,14 @@ During the unprecedented bushfires in the Eastern states of Australia, our dedic
             <div class="_chunk" data-aos="fade" data-aos-delay="300" >
                 <div class="_chunk_bg">
                     <div class="_text_wrapper">
-                        <h2 data-aos="fade" data-aos-delay="600">A place to call home</h2>
-                        <p data-aos="fade-up" data-aos-delay="800">Mind subsidiary The Haven Foundation acquired sites to build multi-unit supported independent living residences in areas of high need in metro Melbourne and regional Victoria</p>
-                        <ul>
-                            <li>Laverton</li>
-                            <li>Epping</li>
-                            <li>Pakenham</li>
-                            <li>Mooroopna</li>
-                            <li>Geelong (under construction)</li>
+                        <h2 data-aos="fade" data-aos-delay="400">A place to call home</h2>
+                        <p data-aos="fade-up" data-aos-delay="8500">Mind subsidiary The Haven Foundation acquired sites to build multi-unit supported independent living residences in areas of high need in metro Melbourne and regional Victoria</p>
+                        <ul data-aos="fade-up" data-aos-delay="600">
+                            <li  data-aos="fade-up" data-aos-delay="700">Laverton</li>
+                            <li data-aos="fade-up" data-aos-delay="700">Epping</li>
+                            <li data-aos="fade-up" data-aos-delay="800">Pakenham</li>
+                            <li data-aos="fade-up" data-aos-delay="800">Mooroopna</li>
+                            <li data-aos="fade-up" data-aos-delay="900">Geelong (under construction)</li>
                         </ul>
                     </div>
                 </div>
@@ -407,7 +421,7 @@ During the unprecedented bushfires in the Eastern states of Australia, our dedic
                     </div>
                 </div>
                 <div class="img_credit " data-aos="fade" data-aos-delay="950">
-                    <p>Artwork used use on welcome packs</p>
+                    <p>Artwork used on Mind Australia welcome packs</p>
                 </div>
             </div>
         </div>
@@ -440,7 +454,7 @@ During the unprecedented bushfires in the Eastern states of Australia, our dedic
             <div class="_chunk" data-aos="fade" data-aos-delay="300" >
                 <div class="_chunk_bg">                
                     <div class="_text_wrapper">
-                        <h2 data-aos="fade" data-aos-delay="600">Improving mental health and housing outcomes</h2>
+                        <h2 data-aos="fade" data-aos-delay="600">Improving mental health <br />and housing outcomes</h2>
                         <div data-aos="fade-up" data-aos-delay="800" class="_2col">
                             <p >How can you recover from mental distress when you don’t have somewhere to live that is safe, secure, appropriate and affordable?</p>
                             
@@ -453,7 +467,7 @@ During the unprecedented bushfires in the Eastern states of Australia, our dedic
                     </div>
                 </div>
                 <div class="img_credit" data-aos="fade" data-aos-delay="950">
-                    <p> Vestibulum dictum nulla quis facilisis consequat.</p>
+                    <p>A resident at Haven Frankston, opened 2019.</p>
                 </div> 
             </div>
         </div>
@@ -470,7 +484,7 @@ During the unprecedented bushfires in the Eastern states of Australia, our dedic
                     </div>
                 </div>
                 <div class="img_credit" data-aos="fade" data-aos-delay="950">
-                    <p> Vestibulum dictum nulla quis facilisis consequat.</p>
+                    <p>Recovery Retreat Queenscliff: Jirrahlinga Koala and Wildlife Sanctuary</p>
                 </div> 
             </div>
         </div>
@@ -483,8 +497,9 @@ During the unprecedented bushfires in the Eastern states of Australia, our dedic
                     <div class="_text_wrapper">
                         <img src="img/mind_logo_rgb.svg" alt="Mind Australia logo - Mind: Help, hope and purpose"/>
                     </div>
+                    
                 </div>
-                 
+                 <div class="social"><a href="#"><i class="fab fa-facebook-f"></i></a> <a href="#"><i class="fab fa-twitter"></i></a> <a href="#"><i class="fab fa-linkedin"></i></a></div>
             </div>
         </div>
     </section>
@@ -502,59 +517,6 @@ During the unprecedented bushfires in the Eastern states of Australia, our dedic
     
       <script src="js/scroll_custom.js"></script>
 
-<!--
-    <script>
-        
-        
-        $(function() {
-            
-        var i = 0;
-            
-          $.scrollify({
-            section : ".page-section",
-            updateHash: false,
-            scrollbars:false,
-            sectionName:false,
-            overflowScroll:false,
-            before: function(nextIndex, elements) {
-//              alert('before event was sent');
-                if($.scrollify.current().attr('data-slide')=="i")
-              {
-                    $.scrollify.current().addClass('active');
-              }
-                if($.scrollify.current().hasClass('video-sect')){
-                    $("#video").get(0).play();
-                } else {
-                    $("#video").get(0).pause();
-                }
-            },
-            after: function(index) {
-//              alert('after is triggered here');
-                if($.scrollify.current().attr('data-slide')!="0")
-              {
-//                 $.scrollify.previous().removeClass('config');
-                 $('section[data-slide="0"]').removeClass('active');
-              }
-            }
-          });
-
-          $(".down-btn").click(function(e) { // e = event
-                e.preventDefault();
-
-                $.scrollify.next();
-          });
-            
-          $(".up-btn").click(function(e) {
-                e.preventDefault();
-
-                $.scrollify.previous();
-          });
-            
-        });
-        
-    </script>
--->
-
     
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
 <!--
@@ -569,9 +531,22 @@ During the unprecedented bushfires in the Eastern states of Australia, our dedic
   <script>
     AOS.init({
         easing: 'ease-out-back',
-        duration: 1000
+        duration: 1200,
+        mirror: true
     });
   </script>
+    
+    <script>
+    // When the user scrolls the page, execute myFunction
+    window.onscroll = function() {myFunction()};
+
+    function myFunction() {
+      var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+      var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      var scrolled = (winScroll / height) * 100;
+      document.getElementById("myBar").style.width = scrolled + "%";
+    }
+    </script>
 
     
 </body>

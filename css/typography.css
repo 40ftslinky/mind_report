@@ -36,11 +36,11 @@ h1, p {
     -ms-transition: all 0.3s ease;
 }
 
-h1, h2 {
+h1, h2, h3, h4 {
     font-family: helvetica-bold,sans-serif;
     font-weight: 700;
     font-style: normal;
-    color: white;
+/*    color: white;*/
 }
 
 h1.title {
@@ -92,9 +92,10 @@ p.large {
 ._text_wrapper li {
     font-family: corporate-s,sans-serif;
     font-weight: 400;
-    font-style: normal;
-        font-size: 20px;
+    font-style: normal; 
+    font-size: 20px;
     line-height: 1.5;
+    margin-left: -1rem;
 }
 
 

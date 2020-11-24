@@ -1,6 +1,6 @@
-//jQuery(document).ready(function($){
+jQuery(document).ready(function($){
 
-$(function() {
+//$(function() {
             
 //        var i = 0;
             
@@ -17,20 +17,42 @@ $(function() {
         } else {
             $("#video").get(0).pause();
         }
+        
+        $('.page-section').removeClass('hot');
+        
+//        var currentSlide = $.scrollify.current().data('slide');
+        var currentSlide = $.scrollify.currentIndex() +1 ;
+        $('span.count').text(currentSlide+ ' / 17');
+//        $.scrollify.currentIndex()
+        
     },
-    after: function() {}
+    after: function() {
+        current = $.scrollify.current();
+        current.addClass('hot');
+        
+        if($.scrollify.currentIndex() !== '0') {
+            $('.prev').removeClass('hide');
+        } if($.scrollify.currentIndex() !== '16') {
+            $('.next').removeClass('hide');
+        } if($.scrollify.currentIndex() == '0'){
+            $('.prev').addClass('hide');
+        } if($.scrollify.currentIndex() == '16'){
+            $('.next').addClass('hide');
+        } 
+    },
   });
 
-  $(".down-btn").click(function(e) { // e = event
+  $(".next").click(function(e) { // e = event
         e.preventDefault();
 
         $.scrollify.next();
   });
 
-  $(".up-btn").click(function(e) {
+  $(".prev").click(function(e) {
         e.preventDefault();
 
         $.scrollify.previous();
   });
 
 });
+
