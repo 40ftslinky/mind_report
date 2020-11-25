@@ -29,7 +29,8 @@ li.mark{
     position: relative;
     display: block;
     visibility:visible; 
-    opacity: 1;    height: 100%;
+    opacity: 1;
+    height: 100%;
     list-style: none;
     margin-left: -1rem;
     transition: all var(--speed) var(--ease) none;
