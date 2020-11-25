@@ -266,8 +266,21 @@ section ._chunk_bg p {
     line-height: 1;
     margin-bottom: 1.0rem;
 }
+@media screen and (max-width: 64rem){
 
+    #_sect_01 img { margin-bottom: 2rem; }
+    #_sect_01 ._text_wrapper img { width: 150px; }
 
+    
+    #_sect_01 ._chunk h2 {
+        font-size: 28px;
+        margin-bottom: 1.0rem;
+    }
+    #_sect_01 ._text_wrapper {
+        margin: 1rem 1.5rem ;
+        padding: 1rem 3vw 1rem;
+    }
+}
 
 /* ---------------------------- */
 
@@ -280,7 +293,12 @@ section ._chunk_bg p {
     color: white;
 }
 
-
+@media screen and (max-width: 64rem){
+    #_sect_02 ._text_wrapper {
+        margin: 2rem 1.5rem ;
+        padding: 0 3vw 1rem;
+    }
+}
 /* ---------------------------- */
 
 #_sect_03 ._chunk {
@@ -295,19 +313,28 @@ section ._chunk_bg p {
 /*    color: white;*/
 }
 
-
+@media screen and (max-width: 64rem){
+    #_sect_03 ._text_wrapper {
+        padding: 0 3vw 1rem;
+    }
+}
 /* ---------------------------- */
 
 #_sect_04 ._chunk {
     width:35vw;
 }
 
-#_sect_03 ._text_wrapper {
+#_sect_04 ._text_wrapper {
     padding: 4.5vw;
 }
 #_sect_04 ._chunk_bg h2,
 #_sect_04 ._chunk_bg p {
     color: var(--dark_grey);
+}
+@media screen and (max-width: 64rem){
+    #_sect_04 ._text_wrapper {
+        padding: 0 3vw 1rem;
+    }
 }
 
 /* ---------------------------- */
@@ -351,9 +378,16 @@ section ._chunk_bg p {
     #_sect_06 ._chunk h2 {
         color: white;
         margin: 0;
+        opacity: 1;
+    }
+    #_sect_06 ._text_wrapper {
+        padding: 0 3vw 1rem;
     }
     #_sect_06 .counter h3  {
         font-size: 50px;
+    }
+    .counter {
+        padding: .5rem 1rem;
     }
 }
 
