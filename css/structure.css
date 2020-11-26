@@ -1,5 +1,9 @@
 /*_structure.css*/
 
+* {
+  --responsive: calc((var(--min-font) * 1rem) + (var(--max-font) - var(--min-font)) * ((100vw - 420px) / (1400 - 420)));
+}
+
 header {
     width:100vw;
     height: 65px;
@@ -104,12 +108,6 @@ section[id~=_sect]
 */
 }
 
-@media screen and (max-width: 64rem){
-    section#_sect_01 {
-        background-position: 20% top;
-    }
-}
-
 /* ---------------------------- */
 
 section ._wrapper {
@@ -122,7 +120,7 @@ section ._wrapper {
     align-items: center;
 }
 
-@media screen and (max-width: 64rem){
+@media screen and (max-width: 63.9rem){
     section ._wrapper {
         align-items:flex-end;
         height: calc(100vh - 150px);
@@ -153,7 +151,7 @@ section ._chunk_bg p {
     float: left:
 }
 
-@media screen and (max-width: 64rem){
+@media screen and (max-width: 63.9rem){
     ._chunk {
         margin-left: 5vw;
         margin-right: 5vw;
@@ -162,7 +160,7 @@ section ._chunk_bg p {
         min-width: unset;
     }
 }
-@media screen and (max-width: 64rem){
+@media screen and (max-width: 63.9rem){
     ._chunk_bg {
         max-height: 80vh;
         overflow-y: scroll;
@@ -173,13 +171,13 @@ section ._chunk_bg p {
 ._text_wrapper {
     padding: 3.75vw;
 }
-@media screen and (max-width: 64rem){
+@media screen and (max-width: 63.9rem){
     ._text_wrapper {
         margin: 3rem 1.5rem ;
         padding: 4rem 2rem ;
     }
 }
-@media screen and (max-width: 64rem){
+@media screen and (max-width: 63.9rem){
     #_sect_05 ._text_wrapper,
     #_sect_07 ._text_wrapper,
     #_sect_08 ._text_wrapper,
@@ -266,7 +264,7 @@ section ._chunk_bg p {
     line-height: 1;
     margin-bottom: 1.0rem;
 }
-@media screen and (max-width: 64rem){
+@media screen and (max-width: 64.1rem){
 
     #_sect_01 img { margin-bottom: 2rem; }
     #_sect_01 ._text_wrapper img { width: 150px; }
@@ -282,7 +280,18 @@ section ._chunk_bg p {
     }
 }
 
+
+@media screen and (max-width: 63.9rem){
+    section#_sect_01 {
+        background-position: 20% top;
+    }
+}
+
 /* ---------------------------- */
+
+section#_sect_02 {
+    background-position: center top;
+}
 
 #_sect_02 ._chunk {
     width:31vw;
@@ -293,13 +302,40 @@ section ._chunk_bg p {
     color: white;
 }
 
-@media screen and (max-width: 64rem){
+@media screen and (max-width: 63.9rem){
     #_sect_02 ._text_wrapper {
         margin: 2rem 1.5rem ;
         padding: 0 3vw 1rem;
     }
+    #_sect_02 ._chunk_bg p {
+        font-size: 24px;
+    }
+
 }
+
+@media screen and (max-width: 75rem){
+    section#_sect_02 {
+        background-position: center top;
+    }
+}
+
+@media screen and (max-width: 63.9rem){
+    section#_sect_02 {
+        background-position: 15% top;
+    }
+}
+@media screen and (max-width: 30rem){ /* 480px */
+    section#_sect_02 {
+/*        background-position: -85vw top;*/
+        background-position: 25% top;
+    }
+}
+
 /* ---------------------------- */
+
+section#_sect_03 {
+    background-position: right top;
+}
 
 #_sect_03 ._chunk {
     width:35vw;
@@ -312,10 +348,37 @@ section ._chunk_bg p {
 #_sect_03 ._chunk_bg p {
 /*    color: white;*/
 }
-
-@media screen and (max-width: 64rem){
+@media screen and (max-width: 87.5rem){ /* 1400px */
+    section#_sect_03 {
+        background-position: 65% top;
+    }
+}
+@media screen and (max-width: 75rem){ /* 1200px */
+    section#_sect_03 {
+/*        background-position: -35vw top;*/
+        background-position: 55% top;
+    }
+}
+@media screen and (max-width: 63.9rem){ /* 1023px */
     #_sect_03 ._text_wrapper {
         padding: 0 3vw 1rem;
+    }
+}
+@media screen and (max-width: 55rem){ /* 880px */
+    section#_sect_03 {
+        background-position: 25% top;
+    }
+}
+@media screen and (max-width: 40rem){ /* 640px */
+    section#_sect_03 {
+/*        background-position: -55vw top;*/
+        background-position: 30% top;
+    }
+}
+@media screen and (max-width: 30rem){ /* 480px */
+    section#_sect_03 {
+/*        background-position: -85vw top;*/
+        background-position: 30% top;
     }
 }
 /* ---------------------------- */
@@ -331,20 +394,64 @@ section ._chunk_bg p {
 #_sect_04 ._chunk_bg p {
     color: var(--dark_grey);
 }
-@media screen and (max-width: 64rem){
+@media screen and (max-width: 63.9rem){
     #_sect_04 ._text_wrapper {
         padding: 0 3vw 1rem;
+        margin: 3rem 1.5rem 1.5rem;
     }
 }
 
 /* ---------------------------- */
 
+section#_sect_05 {
+    background-position: right top;
+}
+
+@media screen and (max-width: 63.9rem){ /* 1023px */
+    section#_sect_05 {
+        background-position: 30% top;
+    }
+    #_sect_05 ._text_wrapper {
+        padding: 0 3vw 1rem;
+        margin: 2rem 1.5rem 1.5rem;
+    }
+}
+
+@media screen and (max-width: 30rem){ /* 480px */
+    section#_sect_05 {
+/*        background-position: -85vw top;*/
+        background-position: 30% top;
+    }
+}
+/* ---------------------------- */
+
+
 #_sect_06 ._chunk {
     width:35vw;
+/*    max-width: 350px;*/
+    min-width: unset;
 }
+@media screen and (min-width: 75rem){ /* 1200px */
+
+    #_sect_06 ._chunk {    
+/*        min-width: unset;*/
+    }
+}
+/*
+@media screen and (max-width: 63.9rem){  1023px 
+    #_sect_06 ._chunk {    
+        max-width: 50vw;
+        margin-left:30vw
+    }
+}
+*/
 
 #_sect_06 ._text_wrapper {
     padding: 5vw 4.5vw;
+}
+
+#_sect_06 h2  {
+    margin-bottom: 0;
 }
 
 #_sect_06 ._chunk h2,
@@ -361,20 +468,52 @@ section ._chunk_bg p {
     background-color: white;
     padding: 1rem 2rem;
 }
+#_sect_06 .counter {
+    max-width: 250px
+} 
 #_sect_06 .counter, 
 #_sect_06 .counter p, 
 #_sect_06 .counter h3  {
     color: var(--primary-blue);  
 }
 #_sect_06 .counter h3  {
-    font-size: 70px;
+/*    font-size: 70px;*/
     line-height: 1;
     margin: 0;
 }
+#_sect_06 .counter h3  {
+        --max-font: 5.5;
+        --min-font: 4;
+        font-size: var(--responsive);
+    }
 #_sect_06 .counter p{ 
     margin: .5rem 0 0 0;
 }
-@media screen and (max-width: 64rem){
+
+@media screen and (max-width: 87.5rem){ /* 1400px */
+    section#_sect_06 {
+        background-position: 55% top;
+    }
+    #_sect_06 ._chunk {
+        margin-left: calc(75% - 410px);
+        width: 35vw;
+    }
+}
+
+@media screen and (max-width: 75rem){ /* 1200px */
+    #_sect_06 .counter h3  {
+        
+    }
+    #_sect_06 .counter {
+/*        max-width: 300px*/
+    } 
+    #_sect_06 .counter h3  {
+        font-size: 40px;
+    }
+
+}
+
+@media screen and (max-width: 63.9rem){ /* 1023px */
     #_sect_06 ._chunk h2 {
         color: white;
         margin: 0;
@@ -382,17 +521,31 @@ section ._chunk_bg p {
     }
     #_sect_06 ._text_wrapper {
         padding: 0 3vw 1rem;
+        margin: 3rem 1.5rem 1.5rem;
     }
     #_sect_06 .counter h3  {
-        font-size: 50px;
+        font-size: 40px;
     }
     .counter {
         padding: .5rem 1rem;
     }
 }
 
+@media screen and (max-width: 63.9rem){ /* 1023px */
+    #_sect_06 ._chunk {
+        margin-left: 5vw;
+        margin-right: 5vw;
+        width: calc(100% - 10vw);
+                max-width: 410px;
+    }
+    
+}
+
 /* ---------------------------- */
 
+#_sect_07 ._chunk {
+    max-width: 430px;
+}
 
 #_sect_07 ._chunk h2 {}
 #_sect_07 ._chunk h3 {
@@ -400,10 +553,19 @@ section ._chunk_bg p {
     color: var(--light_grey);
 }
 #_sect_07 ._chunk_bg h4 {
+    color: var(--primary-blue);  
     font-size: 20px;
     line-height: 1.1;
     margin-bottom: 0;
 }
+
+@media screen and (max-width: 63.9rem){
+    #_sect_07 ._text_wrapper {
+        padding: 0 ;
+        margin: 2rem;
+    }
+}
+
 
 
 /* ---------------------------- */
@@ -411,9 +573,21 @@ section ._chunk_bg p {
 
 #_sect_08 ._chunk h3 {
     font-size: 34px;
+    line-height: 1.1;
     color: var(--primary-blue);
     margin-top: 0;
 }
+
+@media screen and (max-width: 63.9rem){
+    #_sect_08 ._text_wrapper {
+        padding: 0 ;
+        margin: 2rem;
+    }
+    #_sect_08 ._chunk h3 {
+        font-size: 28px;
+    }
+}
+
 
 /* ---------------------------- */
 
@@ -428,6 +602,30 @@ section ._chunk_bg p {
     padding: 5vw 4.5vw;
 }
 
+@media screen and (max-width: 63.9rem){ /* 1023px */
+    #_sect_09 ._chunk {
+        
+    }
+    #_sect_09 ._text_wrapper {
+        padding: 0;
+        margin: 1.5rem 2rem;
+    }
+    #_sect_09 ._wrapper {
+        height: 80vh;
+    }
+    #_sect_09 ._chunk h2{
+        font-size: 24px;
+        margin: 0 0 1rem 0;
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 30rem){ /* 480px */
+    #_sect_09 ._chunk li {
+        font-size: 14px;
+    }
+}
+
 
 /* ---------------------------- */
 
@@ -438,6 +636,13 @@ section ._chunk_bg p {
 
 #_sect_11 ._text_wrapper {
     padding: 5vw 4.5vw;
+}
+
+@media screen and (max-width: 63.9rem){ /* 1023px */
+    #_sect_11 ._text_wrapper {
+        padding: 0;
+        margin: 1.5rem 2rem;
+    }
 }
 
 /* ---------------------------- */
@@ -514,7 +719,7 @@ section ._chunk_bg p {
     max-width: 100%;
     float: left
 }
-@media screen and (max-width: 64rem){
+@media screen and (max-width: 63.9rem){
     #_sect_13 ._chunk {
         width:100%;
         margin-left: 5vw;
@@ -532,16 +737,25 @@ section ._chunk_bg p {
     }
     #_sect_13 ._chunk_bg:nth-of-type(2) {
         margin-left: 0;
-        width: calc(100vw - 4rem);
+        width: calc(100vw - 10vw);
         float: left;
         max-height: 60vh;
         overflow-y: scroll
     }
     #_sect_13 ._text_wrapper {
-/*
-        margin: 3rem 1.5rem ;
-        padding: 4rem 2rem ;
-*/
+
+        margin: 1rem 1.5rem ;
+/*        padding: 4rem 2rem ;  */
+    }
+    #_sect_13 ._chunk h2 {
+/*        font-size: 18px;*/
+        margin-bottom: 0.5rem;
+    }
+    #_sect_13 ._chunk h3 {
+        font-size: 18px;
+    }
+    #_sect_13 ._chunk p {
+        font-size: 16px;
     }
 }
 
@@ -605,7 +819,13 @@ section ._chunk_bg p {
   text-align: center;
 }
 
-
+@media screen and (max-width: 63.9rem){
+    
+    #_sect_14 ._text_wrapper {
+        margin: 2rem 2.5rem;
+        padding: 0;
+    }
+}
 /* ---------------------------- */
 
 
@@ -643,19 +863,36 @@ section ._chunk_bg p {
     font-size: 1.125rem;
     line-height: 1.375;
     margin-top: 0;
+    margin-bottom: 0.5rem;
 }
 
-@media screen and (max-width: 64rem){
+@media screen and (max-width: 63.9rem){
     #_sect_15 ._chunk {
         width:100%;
         margin-left: 5vw;
 /*        margin-right: 0;*/
     }
+    
+}
+
+@media screen and (max-width: 50rem){
+    
+    #_sect_15 ._text_wrapper {
+        margin: 1rem 1.5rem
+    }
+    #_sect_15 ._chunk h2 {
+        font-size: 1.4rem;
+        opacity: 1;
+    }
     #_sect_15 ._2col { 
         column-count: 1;
         column-gap: 0;
     }
+    #_sect_15 ._chunk_bg p {
+        font-size: .9rem;
+    }
 }
+
 
 /* ---------------------------- */
 
@@ -684,6 +921,13 @@ section ._chunk_bg p {
     margin-top: 0;
 }
 
+@media screen and (max-width: 63.9rem){
+    
+    #_sect_16 ._text_wrapper {
+        margin: 2rem 2.5rem;
+        padding: 0;
+    }
+}
 
 /* ---------------------------- */
 
@@ -693,29 +937,12 @@ section ._chunk_bg p {
     margin: auto
 }
 
-@media screen and (max-width: 64rem){
-    #_sect_17 ._chunk {
-        margin-left: 5vw;
-        margin-right: 5vw;
-/*        width: calc(100% - 5vw) !important;*/
-        width:100vw !important;
-        min-width: unset;
-    }
-}
-
-
 #_sect_17 ._text_wrapper { 
     text-align: center
 }
 #_sect_17 ._text_wrapper img { 
     width: 300px;
     margin: 2rem;
-}
-
-@media screen and (max-width: 64rem){
-    #_sect_17 ._text_wrapper img { 
-        max-width: 80vw;
-    }
 }
 
 .social a i {
@@ -753,6 +980,32 @@ section ._chunk_bg p {
   border-radius: 7px;
 }
 
+@media screen and (max-width: 63.9rem){
+    #_sect_17 ._chunk {
+        margin-left: 5vw;
+        margin-right: 5vw;
+        width: calc(100% - 5vw) !important;
+        min-width: unset;
+    }
+    
+    #_sect_13 ._chunk_bg {
+        
+        width: calc(100vw - 10vw);
+        
+    }
+    #_sect_17 ._text_wrapper {
+        margin: 2rem 2.5rem;
+        padding: 0;
+    }
+    #_sect_17 ._text_wrapper img { 
+        max-width: 75vw;
+        padding:0;
+        margin:2rem 0 ;
+    }
+    #_sect_17 ._svg { 
+        padding:0;
+    }
+}
 
 
 
