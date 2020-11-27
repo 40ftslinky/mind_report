@@ -188,6 +188,16 @@ body.scroll {
     line-height: 48px;
     padding: 5px 20px;
 }
+@media screen and (max-width: 63.9rem){ /* 1023px */
+    .navigation ul li a {
+            font-size: 30px;
+    }
+}
+@media screen and (max-width: 25rem){ /* 380px */
+    .navigation ul li a {
+            font-size: 26px;
+    }
+}
 
 .navigation ul li a i:before {color:white;}
 
