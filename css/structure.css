@@ -203,7 +203,7 @@ section ._chunk_bg p {
     bottom:2rem;
 }
 
-.img_credit, .img_credit p {
+.img_credit, .img_credit p, ._chunk .img_credit p {
     margin: 0;
     font-size: 14px;
     line-height: 24px;
