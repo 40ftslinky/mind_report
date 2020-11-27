@@ -190,7 +190,7 @@ section ._chunk_bg p {
 }
 
 
-.img_credit {
+.img_credit, .img_credit p {
     padding:1rem;
 /*    float: right;*/
 /*    margin-top: 1rem;*/
