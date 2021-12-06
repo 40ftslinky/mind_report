@@ -12,11 +12,11 @@ jQuery(document).ready(function($){
     setHeights:false,
     overflowScroll:false,
     before: function() {
-        // if($.scrollify.current().hasClass('video-sect')){
-        //     $("#video").get(0).play();
-        // } else {
-        //     $("#video").get(0).pause();
-        // }
+        if($.scrollify.current().hasClass('video-sect')){
+            $("#video").get(0).play();
+        } else {
+            $("#video").get(0).pause();
+        }
         
         $('.page-section').removeClass('hot');
         

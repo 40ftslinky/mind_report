@@ -1,0 +1,208 @@
+/* no js hamburger dropdown nav CSS */
+/* _navigation.css */
+
+nav {
+  -webkit-transform: translateZ(999999);
+  transform: translateZ(999999);
+  z-index: 999999;
+  position: relative;
+}
+
+.nav--sect_wrap {
+  display: table;
+}
+
+body.noscroll {
+/*
+  overflow: hidden;
+  position: fixed;
+*/
+}
+
+body.scroll {
+/*
+  overflow: auto;
+  position:relative;
+*/
+}
+
+.logo_wrapped {
+    position: fixed;
+    z-index: 99;
+}
+
+.logo {
+    width:100px;
+    height: 59px;
+    margin-left: 5vw;
+}
+
+/* ********************************************* */
+/* progress */
+/* ********************************************* */
+
+/* The progress container (grey background) */
+.progress-container {
+  width: 100%;
+  height: 8px;
+  background: rgba(255,255,255,0.0);
+/*    position: fixed;*/
+    margin-top:-1rem;
+}
+
+/* The progress bar (scroll indicator) */
+.progress-bar {
+  height: 8px;
+  background: rgba(255,255,255,0.3);
+  width: 0%;
+}
+
+/* ********************************************* */
+/* burger */
+/* ********************************************* */
+
+.burger {
+    display: inline-block;
+    position:absolute;
+    float:left;
+/*  top:25px;*/
+/*  right:1rem;*/
+    top:15px;
+/*    left:95vw;*/
+    left:calc(95vw - 28px);
+    z-index:2;
+    border: 0;
+    background: none;
+    outline: 0;
+    padding: 0;
+    cursor: pointer;
+    border-bottom: 4px solid white;
+    width: 28px;
+    transition: border-bottom 1s ease-in-out;
+    -webkit-transition: border-bottom 1s ease-in-out;
+}
+
+.burger::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+.burger:before {
+  content: "";
+  display: block;
+  border-bottom: 4px solid white;
+  width: 100%;
+  margin-bottom: 5px;
+  transition: -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+}
+
+.burger:after {
+  content: "";
+  display: block;
+  border-bottom: 4px solid white;
+  width: 100%;
+  margin-bottom: 5px;
+  transition: -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+}
+
+.burger-check {
+  display: none;
+}
+
+.burger-check:checked ~ .burger {
+  border-bottom: 4px solid transparent;
+  transition: border-bottom 0.8s ease-in-out;
+  -webkit-transition: border-bottom 0.8s ease-in-out;
+}
+
+.burger-check:checked ~ .burger:before {
+  transform: rotate(-405deg) translateY(1px) translateX(-3px);
+  -webkit-transform: rotate(-405deg) translateY(1px) translateX(-3px);
+  transition: -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+}
+
+.burger-check:checked ~ .burger:after {
+  transform: rotate(405deg) translateY(-4px) translateX(-5px);
+  -webkit-transform: rotate(405deg) translateY(-4px) translateX(-5px);
+  transition: -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+}
+
+.navigation {
+  overflow: hidden;
+  max-height: 0;
+  -webkit-transition: max-height 0.25s ease-in-out;
+  transition: max-height 0.25s ease-in-out;
+  position:fixed;
+  top:0;
+  left:0;
+}
+
+.burger-check:checked ~ .navigation {
+  max-height: 100vh;
+  -webkit-transition: max-height 0.25s ease-in-out;
+  transition: max-height 0.25s ease-in-out;
+}
+
+
+.navigation a {
+  color: inherit;
+}
+
+.navigation ul {
+  margin: 0;
+  padding: 200px 0;
+  background-color: rgba(0,174,239,0.99);
+  height:100vh;
+  width:100vw;
+  z-index:-99;
+  display:block;
+}
+
+.navigation ul li {
+  list-style: none;
+  font-size: 25px;
+  padding: 5px 0;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.navigation ul li a {
+    text-decoration: none;
+    font-family: corporate-s,sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    color:white;
+    font-size: 40px;
+    line-height: 48px;
+    padding: 5px 20px;
+}
+@media screen and (max-width: 63.9rem){ /* 1023px */
+    .navigation ul li a {
+            font-size: 30px;
+    }
+}
+@media screen and (max-width: 25rem){ /* 380px */
+    .navigation ul li a {
+            font-size: 26px;
+    }
+}
+
+.navigation ul li a i:before {color:white;}
+
+.navigation ul li a:hover {
+  /* text-decoration: underline; */
+  background-color: rgba(255,255,255,0.3);
+  border-radius: 7px;
+}

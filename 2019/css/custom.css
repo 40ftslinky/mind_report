@@ -1,0 +1,39 @@
+/* custom.css */
+
+
+@import "colours.css";
+@import "structure.css";
+@import "slider.css";
+@import "navigation.css";
+@import "typography.css";
+
+
+
+
+
+:root {
+    
+    /*  */
+
+    --max-width:72rem;
+    --col-width:calc((72rem - 11rem) / 12);
+    --col-gap:1rem;
+    /* --column-width: calc((100% / var(--col-numb)) - var(--col-gap)); */
+
+    /*  */
+
+    /*    screen widths   */
+    --sm_mob-width:23.438rem; /* 375px */
+    --lg_mob-width:25rem; /* 400px */
+    --tablet-vert-width:48rem; /* 768px */
+    --tablet-wide-width:64rem; /* 1024px */
+    --screen-md-width:67.5rem; /* 1080px */
+    --screen-width:72rem; /* 1152px */
+    --screen-lg-width:75rem; /* 1200px */
+    --screen-xl-width:100rem; /* 1600px */
+    
+}
+
+body {
+/*    overflow: hidden;*/
+}
